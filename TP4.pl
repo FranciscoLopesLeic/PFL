@@ -20,3 +20,16 @@ print_n(N, S) :-
     write(S),
     N1 is N - 1,
     print_n(N1, S).
+
+/*b)*/
+text_change([]).
+text_change([H|T]):-
+    put_code(H),
+    text_change(T).
+
+print_text(Text, Symbol, Padding):-
+    write(Symbol),
+    print_n(Padding, ' '),
+    text_change(Text),
+    print_n(Padding, ' '),
+    write(Symbol).
