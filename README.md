@@ -1,2 +1,2 @@
-# Proj1PFL
+# PFL
 Programação Funcional Lógica
