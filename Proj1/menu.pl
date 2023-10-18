@@ -34,7 +34,7 @@ process_option(_) :- invalid_option.
 
 start_pvp_game :-
     separator,
-    write('Starting Player vs Player game...'), nl,
+    write('Starting Player vs Player game...'), nl.
 
 start_pvc_game :-
     separator,
