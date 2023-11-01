@@ -1,5 +1,5 @@
 % Initialize the game and start the game loop.
-play_game :-
+start_game :-
     initial_board(Board), % Define your initial game board.
     display_board(Board), % Display the initial board.
     play(player1, Board). % Start the game with player 1.

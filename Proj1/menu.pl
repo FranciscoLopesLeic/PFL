@@ -47,8 +47,8 @@ start_pvc_game :-
         startPvC(Computer)
     ).
 
-pvc_mode(1) :- separator, write('                                   Easy'), n1, separator.
-pvc_mode(2) :- separator, write('                                   Hard'), n1, separator.
+pvc_mode(1) :- separator, write('                                   Easy'), nl, separator.
+pvc_mode(2) :- separator, write('                                   Hard'), nl, separator.
 
 start_cvc_game :-
     separator,

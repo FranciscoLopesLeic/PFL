@@ -160,6 +160,3 @@ play_game(Player, Board) :-
         write('Invalid move. Try again.'), nl,
         play_game(Player, Board)
     ).
-
-% Entry point to start the game.
-start_game :- start_game.
