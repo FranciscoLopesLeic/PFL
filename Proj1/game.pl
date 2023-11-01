@@ -1,6 +1,6 @@
 :- consult('board.pl'). % Include your existing board visualization.
 :- consult('utils.pl'). % Include utility predicates.
-:- consult('gameloop.pl')
+:- consult('gameloop.pl').
 
 % Define the game board data structure.
 initial_board([
