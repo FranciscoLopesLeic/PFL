@@ -107,6 +107,31 @@ board_is_full(Board) :-
 % To check for a draw, call check_draw(Board).
 
 
+display_board(Board) :-
+    nl,
+    write('    1   2   3   4   5   6'), nl,
+    write('  -------------------------'), nl,
+    display_rows(Board, 1).
+
+display_rows([], _).
+display_rows([Row | Rest], N) :-
+    write(N), write(' | '),
+    display_row(Row),
+    N1 is N + 1,
+    display_rows(Rest, N1).
+
+display_row([]) :- nl.
+display_row([Cell | Rest]) :-
+    display_cell(Cell),
+    write(' | '),
+    display_row(Rest).
+
+display_cell(empty) :-
+    write('   ').
+display_cell(player1) :-
+    write(' X ').
+display_cell(player2) :-
+    write(' O ').
 
 
 % Main game loop.
