@@ -14,4 +14,4 @@ After a first play, the following player can not insert the wheel in the same ho
 
 The objective of Flügelrad is to be the first player to form a contiguous cluster of at least six of their marbles. The clusters can be formed horizontally, vertically, or diagonally. Once a player has created a cluster of six or more marbles of their color, they win the game. Players must strategically position and move the impeller wheel to create and disrupt their opponent's clusters while working towards their own victory.
 
-* **1.Main**
+###1.Main
